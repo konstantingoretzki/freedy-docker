@@ -23,9 +23,8 @@ RUN apk update \
 RUN python -m venv venv \
     && venv/bin/pip install --no-cache-dir -r requirements.txt \
     && venv/bin/pip install --no-cache-dir gunicorn \
-    && chmod +x boot.sh \
-    && sed -i -e "s/locale.setlocale(locale.LC_ALL, 'de_DE.utf8')/#locale.setlocale(locale.LC_ALL, 'de_DE.utf8')/g" freedy.py
-
+    && chmod +x boot.sh 
+    
 ENV FLASK_APP freedy.py
 
 RUN chown -R freedy:freedy ./
