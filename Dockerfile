@@ -1,7 +1,7 @@
 FROM python:3.7.4-alpine3.10
 
 LABEL authors="Konstantin Goretzki, Felix Alexa"
-LABEL version="v1.0"
+LABEL version="v1.1"
 LABEL description="This image contains a gunicorn server with our RSS/ Atom reader Freedy installed."
 
 # uses https://github.com/konstantingoretzki/freedy
