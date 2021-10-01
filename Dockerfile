@@ -1,12 +1,12 @@
-FROM python:3.8-alpine
+FROM python:3.9-alpine
 
 LABEL authors="Konstantin Goretzki, Felix Alexa"
-LABEL version="v1.2"
-LABEL description="This image contains a gunicorn server with our RSS/ Atom reader Freedy installed."
+LABEL version="v1.3"
+LABEL description="This image contains a gunicorn server with our RSS / Atom reader Freedy installed."
 
 # uses https://github.com/konstantingoretzki/freedy
-ARG FREEDY_VERSION=v1.0.0
-ARG FREEDY_DOWNLOAD_SHA512=53e27a567ee251d55389d95018f9a700f9648934a6f3d2a81e53afdea7feb31796f2a188c36ca36488049612d18410d9f194ac3084bf73c6e964317aae428973
+ARG FREEDY_VERSION=v1.0.1
+ARG FREEDY_DOWNLOAD_SHA512=1e3fa4319edf9c9440f68335cc09fd933f322e10b59a2095c7d371b66be105aa43f3dc4b6aea96b8480a6aca887be240a2967e43a6db02508c300d5df4e74282
 
 RUN adduser -D freedy
 
